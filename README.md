@@ -52,6 +52,8 @@ Unity API Scripting Unity Technologies. (n.d.). Unity - scripting API: Unity3d.c
 
 YouTube. (2023). YouTube. Retrieved February 24, 2023, from https://www.youtube.com/watch?v=WKTZgf7ZDGs. 
 
+Katsukagi. (2022, January 22). Wood 025. 3D TEXTURES. Retrieved February 24, 2023, from https://3dtextures.me/2022/01/22/wood-025/ 
+
 Technologies, U. (n.d.). Camera.targettexture. Unity - Scripting API: Retrieved February 24, 2023, from https://dev.rbcafe.com/unity/unity-5.3.3/en/ScriptReference/Camera-targetTexture.html 
 
 ICG Class Lectures 1 through 9

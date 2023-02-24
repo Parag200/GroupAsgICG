@@ -8,13 +8,15 @@ public class playerMove : MonoBehaviour
     private float speed = 7.0f;
     private float JumpForce = 4.5f;
     private Rigidbody rb;
-    
-   
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+     
     }
 
     // Update is called once per frame
@@ -48,6 +50,8 @@ public class playerMove : MonoBehaviour
         {
             SceneManager.LoadScene("Win");
         }
+
+        
 
     }
 }

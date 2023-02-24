@@ -26,7 +26,8 @@ Shader "Custom/BumpShader"
 		o.Normal *= float3(_mySlider,_mySlider,1);
 		
 		}
-		ENDCG } Fallback "Diffuse"
+		ENDCG 
+   } Fallback "Diffuse"
 
 }
 
