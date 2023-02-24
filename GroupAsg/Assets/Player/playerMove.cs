@@ -9,7 +9,9 @@ public class playerMove : MonoBehaviour
     private float JumpForce = 4.5f;
     private Rigidbody rb;
 
+    public ParticleSystem colparticleSystem;
 
+    bool isGround = true;
 
 
     // Start is called before the first frame update
@@ -27,10 +29,11 @@ public class playerMove : MonoBehaviour
 
             rb.velocity = new Vector3(verticalInput * speed, rb.velocity.y, horizontalInput * -speed);
 
-        
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGround ==false )
         {
             rb.velocity = new Vector3(rb.velocity.x, JumpForce, rb.velocity.z);
+            colparticleSystem.Play();
         }
 
        
@@ -41,7 +44,7 @@ public class playerMove : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.name==("DeathTrigger"))
+        if (other.gameObject.name == ("DeathTrigger"))
         {
             SceneManager.LoadScene("Dead");
         }
@@ -51,7 +54,6 @@ public class playerMove : MonoBehaviour
             SceneManager.LoadScene("Win");
         }
 
-        
 
     }
 }
