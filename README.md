@@ -18,6 +18,16 @@ properly to scale as it will be what the camera is seeing. The final step was cr
 This script is able to turn on the low res render texture by changing the camera target texture via Input.GetKeyDown. Now when the player 
 presses the button "T" the game will go into the low res style.
 
+**Vertex Fragment Shader Shadows**
+Making a simple inspired gates from Japan called Torii, I think this is a good way to show off the shadows each object has with the 
+vertex fragment shader. The reason why I put these gates at the start and end of the level is to have the player sense progression, while 
+also indicating the length of a level. As the player moves onwards the shadows from the gates hit the player and the floor. This was done 
+by using a shader that had 2 passes, ignoring sources of light and using Unity's shadow functions. After finding the position coordinates
+of the object, we mulitply them using the diffuse lighitng. In return allows us to have a object have its own shadow as it ignores all other 
+light sources in Unity.
+
+Bump mapping code was added into the vertex fragment shader, allowing the Torii gate's to have a detailed wood material from 3Dtextures.me 
+
 **Platforms, Walls, End Door**
 
 The platforms in the low-fidelity game uses a bump shader effect to give the pop to the bricks on the texture. This was done by using the in class Shader code for from the lecture 3 (Bump Mapping) and applying the texture's normal map and height map. This gave us the bumping effect but my platforms didn't look visually pleasing relative to the light source from the bottom of the game level. To fix this I increased the slider to the max value being 10. This allowed the heightMap to show more of the vertex offset within the shader. This method was also used on the walls surrounding the platforms. My scene benefits from this shader beacuse of the directional and point lighting in my scene. With the main light sources coming from the lava, the bottom portion of the platform is well lit while the top has some lighting due to teh huge lava floor. This allows the heightMap to be used effectively as the partial light hitting the top platform can show the differences of vertex offset to the player clearly.
@@ -53,6 +63,8 @@ Unity API Scripting Unity Technologies. (n.d.). Unity - scripting API: Unity3d.c
 YouTube. (2023). YouTube. Retrieved February 24, 2023, from https://www.youtube.com/watch?v=WKTZgf7ZDGs. 
 
 Katsukagi. (2022, January 22). Wood 025. 3D TEXTURES. Retrieved February 24, 2023, from https://3dtextures.me/2022/01/22/wood-025/ 
+
+White powder, white powder, linear powder, Powder Png. PNGWing. (n.d.). Retrieved February 24, 2023, from https://www.pngwing.com/en/free-png-ddgib 
 
 Technologies, U. (n.d.). Camera.targettexture. Unity - Scripting API: Retrieved February 24, 2023, from https://dev.rbcafe.com/unity/unity-5.3.3/en/ScriptReference/Camera-targetTexture.html 
 

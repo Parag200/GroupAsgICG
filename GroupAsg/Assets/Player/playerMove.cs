@@ -11,7 +11,7 @@ public class playerMove : MonoBehaviour
 
     public ParticleSystem colparticleSystem;
 
-    bool isGround = true;
+   
 
 
     // Start is called before the first frame update
@@ -30,7 +30,7 @@ public class playerMove : MonoBehaviour
             rb.velocity = new Vector3(verticalInput * speed, rb.velocity.y, horizontalInput * -speed);
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGround ==false )
+        if (Input.GetKeyDown(KeyCode.Space) )
         {
             rb.velocity = new Vector3(rb.velocity.x, JumpForce, rb.velocity.z);
             colparticleSystem.Play();
