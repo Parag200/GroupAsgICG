@@ -27,6 +27,14 @@ by using a shader that had 2 passes, ignoring sources of light and using Unity's
 of the object, we mulitply them using the diffuse lighitng. In return allows us to have a object have its own shadow as it ignores all other 
 light sources in Unity.
 
+**Visual Effect**
+Using the particle system in Unity, I modified it so that it would be a small burst with the material being a png image of dust. This 
+indicates the player that their player has jump. With a colored outline of the dust, the speed , duration and amount of particles were changed.
+Since the system would play once the player jump by pressing space, I did not want to have the particles flaring up the screen. Instead the 
+particle system that was the final product is more gentle and smooth to the players, even if they jump alot the visual effect of the particle
+system will not disturb the overall environment of Lava Run. Finally after the script was added on to the player, the particle system was then 
+made into a child while having the MainPlayer the parent. This allows the particle system to move with the players movement.
+
 Bump mapping code was added into the vertex fragment shader, allowing the Torii gate's to have a detailed wood material from 3Dtextures.me 
 
 **Platforms, Walls, End Door**
