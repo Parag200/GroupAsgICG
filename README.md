@@ -19,6 +19,7 @@ This script is able to turn on the low res render texture by changing the camera
 presses the button "T" the game will go into the low res style.
 
 **Vertex Fragment Shader Shadows**
+
 Making a simple inspired gates from Japan called Torii, I think this is a good way to show off the shadows each object has with the 
 vertex fragment shader. The reason why I put these gates at the start and end of the level is to have the player sense progression, while 
 also indicating the length of a level. As the player moves onwards the shadows from the gates hit the player and the floor. This was done 
