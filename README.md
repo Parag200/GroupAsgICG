@@ -28,6 +28,7 @@ of the object, we mulitply them using the diffuse lighitng. In return allows us 
 light sources in Unity.
 
 **Visual Effect**
+
 Using the particle system in Unity, I modified it so that it would be a small burst with the material being a png image of dust. This 
 indicates the player that their player has jump. With a colored outline of the dust, the speed , duration and amount of particles were changed.
 Since the system would play once the player jump by pressing space, I did not want to have the particles flaring up the screen. Instead the 

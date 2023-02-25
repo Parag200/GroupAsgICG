@@ -3432,3 +3432,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2984.853855 seconds.
+  path: Assets/LowResPostProsEff/LowRes.renderTexture
+  artifactKey: Guid(9b9d6de6e959976469751b04240e801a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowResPostProsEff/LowRes.renderTexture using Guid(9b9d6de6e959976469751b04240e801a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336848de3f3a7f46e463363c08a95a0d') in 0.062667 seconds 
